@@ -4,6 +4,10 @@ class NumeralsToRoman:
    def __init__(self, number) -> None:
        self.number = number
 
+   def __str__(self) -> str:
+        roman = NumeralsToRoman(self.number)
+        return f"{roman}"
+
     
    def NumToRoman(self):
 
