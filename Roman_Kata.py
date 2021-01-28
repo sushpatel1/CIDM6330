@@ -26,11 +26,6 @@ class NumeralsToRoman:
             while Number >= k:
                 roman_number += v
                 Number -= k
-
-           # for a in range(Number // val[i]):
-            #    roman_number += syb[i]
-            #    Number -= val[i]
-           # i += 1
        return roman_number
 
 
