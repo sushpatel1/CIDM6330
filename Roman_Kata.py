@@ -5,12 +5,11 @@ class NumeralsToRoman:
        self.number = number
 
    def __str__(self) -> str:
-        roman = NumToRoman(self.number)
+        roman = NumToRoman()
         return f"{roman}"
 
     
 def NumToRoman(self):
-
        Number = self.number
        dict = { 1000:"M", 900:"CM", 500:"D", 400:"CD",
                 100:"C", 90:"XC", 50:"L", 40:"XL",
