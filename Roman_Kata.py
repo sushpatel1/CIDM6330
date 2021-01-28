@@ -1,15 +1,19 @@
 class NumeralsToRoman:
    
 
-   def __init__(self, number) -> None:
+     def __init__(self, number):
        self.number = number
 
-   def __str__(self) -> str:
-        roman = NumToRoman()
+     def __str__(self) -> str:
+        roman = self.NumToRoman()
+        return f"{roman}"
+
+     def __repr__(self) -> str:
+        roman = self.NumToRoman()
         return f"{roman}"
 
     
-def NumToRoman(self):
+     def NumToRoman(self):
        Number = self.number
        dict = { 1000:"M", 900:"CM", 500:"D", 400:"CD",
                 100:"C", 90:"XC", 50:"L", 40:"XL",
