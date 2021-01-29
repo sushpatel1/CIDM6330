@@ -21,7 +21,7 @@ class NumeralsToRoman:
 
        roman_number = ''
        i = 0
-       while  Number > 0:
+       while  Number > 0 and Number <= 3000:
            for k, v in dict.items():
             while Number >= k:
                 roman_number += v
