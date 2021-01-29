@@ -21,13 +21,15 @@ class RomanToNumerals:
        i = 0
        for i in range(len(numeral)):
         current_numeral = dict[numeral[i]]
-        if current_numeral in dict:         
-         if (i+1 < len(numeral)): 
-           Next_Numeral = dict[numeral[i+1]]
-           if (current_numeral >= Next_Numeral): 
-            number = number + current_numeral           
-           else: 
-            number = number - current_numeral 
-         else: 
-            number = number + current_numeral 
+        if current_numeral in dict.keys():         
+          if (i+1 < len(numeral)): 
+            Next_Numeral = dict[numeral[i+1]]
+            if (current_numeral >= Next_Numeral): 
+             number = number + current_numeral           
+            else: 
+             number = number - current_numeral 
+          else: 
+             number = number + current_numeral 
+        else:
+         return "Numeral value is not valid"
        return number
