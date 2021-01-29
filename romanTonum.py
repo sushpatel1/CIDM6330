@@ -20,8 +20,8 @@ class RomanToNumerals:
        number = 0
        i = 0
        for i in range(len(numeral)):
-        current_numeral = dict[numeral[i]]
-        if current_numeral in dict.keys():         
+        if dict[numeral[i]] in dict.keys():   
+          current_numeral = dict[numeral[i]]             
           if (i+1 < len(numeral)): 
             Next_Numeral = dict[numeral[i+1]]
             if (current_numeral >= Next_Numeral): 
