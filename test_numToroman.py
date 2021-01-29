@@ -7,13 +7,16 @@ class NumToRomanTest(unittest.TestCase):
 
 
    def NumToRomanTest(self):
-       numeral1 = NumeralsToRoman(105)
-       Expected_Val1 = "CV"
-       Actual_val1 = numeral1.NumToRoman()
-
-       numeral2 = NumeralsToRoman(0)
-       Expected_Val2 = "not a valid Number"
-       Actual_val2 = numeral2.NumToRoman()
+       numeral = NumeralsToRoman(105)
+       Expected_Val = "CV"
+       Actual_val = numeral.NumToRoman()
        
-       self.assertEqual(Expected_Val1, Actual_val1)
-       self.assertNotEqual(Expected_Val2, Actual_val1)
+       self.assertEqual(Expected_Val, Actual_val)
+     
+
+   def NumToRomanTest1(self):
+       numeral = NumeralsToRoman(0)
+       Expected_Val = "not a valid Number"
+       Actual_val = numeral.NumToRoman()
+
+       self.assertEqual(Expected_Val, Actual_val)
