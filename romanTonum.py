@@ -20,7 +20,7 @@ class RomanToNumerals:
        number = 0
        i = 0
        for i in range(len(numeral)):
-        if dict[numeral[i]] in dict.keys():   
+        if numeral[i] in dict.keys():   
           current_numeral = dict[numeral[i]]             
           if (i+1 < len(numeral)): 
             Next_Numeral = dict[numeral[i+1]]
