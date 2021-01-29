@@ -23,14 +23,15 @@ class RomanToNumerals:
         if numeral[i] not in dict.keys():   
           return "Numeral value is not valid"
          
-          current_numeral = dict[numeral[i]]             
-          if (i+1 < len(numeral)): 
-            Next_Numeral = dict[numeral[i+1]]
-            if (current_numeral >= Next_Numeral): 
-             number = number + current_numeral           
-            else: 
-             number = number - current_numeral 
+        current_numeral = dict[numeral[i]]             
+        if (i+1 < len(numeral)): 
+          Next_Numeral = dict[numeral[i+1]]
+          if (current_numeral >= Next_Numeral): 
+           number = number + current_numeral           
           else: 
+            number = number - current_numeral 
+        else: 
              number = number + current_numeral       
          
-          return number
+       return number
+ 
