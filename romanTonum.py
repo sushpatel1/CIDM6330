@@ -20,17 +20,17 @@ class RomanToNumerals:
        number = 0
        i = 0
        for i in range(len(numeral)):
-        if numeral[i] not in dict.keys():   
-          return "Numeral value is not valid"
+         if numeral[i] not in dict.keys():   
+           return "Numeral value is not valid"
          
-        current_numeral = dict[numeral[i]]             
-        if (i+1 < len(numeral)): 
-          Next_Numeral = dict[numeral[i+1]]
-          if (current_numeral >= Next_Numeral): 
-           number = number + current_numeral           
-          else: 
-            number = number - current_numeral 
-        else: 
+         current_numeral = dict[numeral[i]]             
+         if (i+1 < len(numeral)): 
+           Next_Numeral = dict[numeral[i+1]]
+           if (current_numeral >= Next_Numeral): 
+            number = number + current_numeral           
+           else: 
+             number = number - current_numeral 
+         else: 
              number = number + current_numeral       
          
        return number
