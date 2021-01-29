@@ -21,6 +21,9 @@ class NumeralsToRoman:
 
        roman_number = ''
        i = 0
+       if Number <= 0:
+         return "not a valid Number"
+
        while  Number > 0 and Number <= 3000:
            for k, v in dict.items():
             while Number >= k:
