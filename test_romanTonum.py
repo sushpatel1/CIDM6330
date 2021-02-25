@@ -1,4 +1,4 @@
-from romanTonum import RomanToNumerals
+from cidm6330.romanTonum import RomanToNumerals
 import unittest
 
 class RomanToNumTest(unittest.TestCase):
@@ -8,8 +8,7 @@ class RomanToNumTest(unittest.TestCase):
    def RomanToNumTest(self):
        numeral = RomanToNumerals("V")
        Expected_Val = 5
-       Actual_val = numeral.RomanToNum()
-       
+       Actual_val = numeral.RomanToNum()       
        self.assertEqual(Expected_Val, Actual_val)
 
    def RomanToNumTest1(self):

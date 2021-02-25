@@ -1,4 +1,4 @@
-from numToroman import NumeralsToRoman
+from cidm6330.numToroman import NumeralsToRoman
 import unittest
 
 class NumToRomanTest(unittest.TestCase):
